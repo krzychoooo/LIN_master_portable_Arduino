@@ -176,7 +176,7 @@ LIN_Master::state_t LIN_Master_HardwareSerial_ESP32::_receiveFrame(void)
   \param[in]  Baudrate    communication speed [Baud]
   \param[in]  NameLIN     LIN node name 
 */
-LIN_Master_HardwareSerial_ESP32::LIN_Master_HardwareSerial_ESP32(HardwareSerial &Interface, uint8_t PinRx, uint8_t PinTx, const char NameLIN[] = "") : LIN_Master_HardwareSerial::LIN_Master_HardwareSerial(Interface, NameLIN)
+LIN_Master_HardwareSerial_ESP32::LIN_Master_HardwareSerial_ESP32(HardwareSerial &Interface, uint8_t PinRx, uint8_t PinTx, uint8_t pinLedRx, uint8_t pinLedTx, const char NameLIN[] = "") : LIN_Master_HardwareSerial::LIN_Master_HardwareSerial(Interface, NameLIN)
 {
   // store parameters in class variables
   this->pinRx      = PinRx;                                   // receive pin
