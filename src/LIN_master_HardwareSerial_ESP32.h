@@ -41,6 +41,8 @@ class LIN_Master_HardwareSerial_ESP32 : public LIN_Master_HardwareSerial
 
     uint8_t               pinRx;              //!< pin used for receive
     uint8_t               pinTx;              //!< pin used for transmit
+    uint8_t               pinLedRx;
+    uint8_t               pinLedTx;
     uint32_t              timeStartBreak;     //!< micros() when BREAK was sent
 
 
