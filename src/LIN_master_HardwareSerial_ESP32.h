@@ -61,11 +61,13 @@ class LIN_Master_HardwareSerial_ESP32 : public LIN_Master_HardwareSerial
   public:
 
     /// @brief Class constructor
-    LIN_Master_HardwareSerial_ESP32(HardwareSerial &Interface, uint8_t PinRx, uint8_t PinTx, const char NameLIN[]);
+    LIN_Master_HardwareSerial_ESP32(HardwareSerial &Interface, uint8_t PinRx, uint8_t PinTx, uint8_t pinLedRx, uint8_t pinLedTx, const char NameLIN[]);
      
     /// @brief Open serial interface
     void begin(uint16_t Baudrate);
-  
+    void ledTx(uint8_t value);
+    void ledRx(uint8_t value);
+
 }; // class LIN_master_HardwareSerial_ESP32
 
 
