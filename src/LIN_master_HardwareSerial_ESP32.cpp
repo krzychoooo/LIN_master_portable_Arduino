@@ -205,6 +205,14 @@ void LIN_Master_HardwareSerial_ESP32::begin(uint16_t Baudrate)
 
 } // LIN_Master_HardwareSerial_ESP32::begin()
 
+void LIN_Master_HardwareSerial_ESP32::ledTx(uint8_t value){
+  digitalWrite(this->pinLedTx, value);
+}
+void LIN_Master_HardwareSerial_ESP32::ledRx(uint8_t value){
+  digitalWrite(this->pinLedRx, value);
+}
+
+
 #endif // ARDUINO_ARCH_ESP32
 
 /*-----------------------------------------------------------------------------
