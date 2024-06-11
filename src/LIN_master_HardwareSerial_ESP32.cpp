@@ -181,7 +181,8 @@ LIN_Master_HardwareSerial_ESP32::LIN_Master_HardwareSerial_ESP32(HardwareSerial 
   // store parameters in class variables
   this->pinRx      = PinRx;                                   // receive pin
   this->pinTx      = PinTx;                                   // transmit pin
-
+  this->pinLedRx   = pinLedRx;
+  this->pinLedTx   = pinLedTx;
   // must not open connection here, else system resets
 
 } // LIN_Master_HardwareSerial_ESP32::LIN_Master_HardwareSerial_ESP32()
